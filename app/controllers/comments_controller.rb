@@ -20,6 +20,15 @@ class CommentsController < ApplicationController
     redirect_to book_path(params[:book_id])
   end
 
+  def follows
+    
+  end
+
+  def followed
+    
+  end
+
+  private
   def comment_params
     params.require(:comment).permit(:comment)
   end
